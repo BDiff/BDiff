@@ -1,4 +1,4 @@
-## Are you still struggling with reading such differencing results? Now try BDiff!
+### Are you still struggling with reading such differencing results? Now try BDiff!
 <img width="2962" height="1150" alt="image" src="https://github.com/user-attachments/assets/165f68d0-e30b-4a1f-9b0e-ddb26ccc70e6" />
 
 BDiff is a browser-based file differencing tool that can identify precise differences between text files and generate corresponding edit scripts. It can be applied in scenarios such as code review and change analysis.
