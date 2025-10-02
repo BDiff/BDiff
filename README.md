@@ -1,8 +1,8 @@
 <img width="3281" height="941" alt="image" src="https://github.com/user-attachments/assets/e7d2dc5e-90bd-400f-8a3f-8ef8fbc4cf83" />
+
 Are you still struggling with reading such differencing results? **Now try BDiff!**
 
-
-BDiff is a browser-based file differencing tool that can identify precise differences between text files and generate corresponding edit scripts. It can be applied in scenarios such as code review and change analysis.
+BDiff is a browser-based file differencing tool that can identify precise differences between text files and generate corresponding edit scripts. It can be applied in scenarios such as code review and change analysis. The backend builds on a text-based differencing algorithm and are thus **language-independent**.
 
 ## I. 🎻 Main Features
 - **Comprehensive Difference Identification**: It can identify line deletions, line additions, line updates, line splits, line merges, block copies (including line updates), and block moves (including line updates).
