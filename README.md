@@ -67,12 +67,7 @@ square/okhttp, c8638813ff5f90715417e489b342aae5e410c5b2, pom.xml
 ### 3.9 Converting spaces to indentation
 scikit-learn/scikit-learn, 612312553118371289330f50b38653d1206246c0, gene.py
 ![](http://test.bdiff.net/public/scikit-learn-612312553118371289330f50b38653d1206246c0-gene.py.png)
-## 4. 🎯 Contribution Guidelines
-We welcome contributions through the following methods:
-1. Submit an Issue to report problems or suggest improvements.
-2. Fork the repository and submit a Pull Request.
-3. Participate in discussions about the project.
-## 5. 📃 License
+## 4. 📃 License
 This software is licensed under [Mulan Public License，Version 2](http://openworks.mulanos.cn/#/licenses/MulanPubL-v2) (Mulan PubL v2).
 ```
 Copyright (c) [2025] [Lu YAO]
@@ -85,7 +80,7 @@ EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
 MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
 See the Mulan PubL v2 for more details.
 ```
-## 6. 🎅 Contributors
+## 5. 🎅 Contributors
 - Lu Yao (卢遥)
 - Liu Wanwei (刘万伟)
 - Song Wansheng (宋万盛)
