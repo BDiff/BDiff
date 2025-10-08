@@ -1,14 +1,14 @@
-"""
-Copyright (c) [2025] [Lu YAO]
-BDiff is licensed under Mulan PubL v2.
-You can use this software according to the terms and conditions of the Mulan PubL v2.
-You may obtain a copy of Mulan PubL v2 at:
-        http://openworks.mulanos.cn/#/licenses/MulanPubL-v2
-THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND,
-EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
-MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
-See the Mulan PubL v2 for more details.
-"""
+# Copyright (c) [2025] [Lu YAO]
+# BDiff is licensed under Mulan PubL v2.
+# You can use this software according to the terms and conditions of the Mulan PubL v2.
+# You may obtain a copy of Mulan PubL v2 at:
+#         http://openworks.mulanos.cn/#/licenses/MulanPubL-v2
+# THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND,
+# EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
+# MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+# See the Mulan PubL v2 for more details.
+
+"""Core codes of BDiff."""
 
 import copy
 import os
