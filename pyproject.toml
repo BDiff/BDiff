@@ -15,7 +15,7 @@ description = "BDiff is a block-aware and accurate text-based difference tool."
 readme = "README.md"
 license = { text = "Mulan PubL v2" }
 dynamic = ["version"]
-dependencies = ["numpy==1.26.4", "scipy==1.15.2"]
+dependencies = ["numpy==2.3.3", "scipy==1.15.2"]
 urls."Bug tracker" = "https://github.com/BDiff/BDiff/issues"
 urls."Source code" = "https://github.com/BDiff/BDiff"
 
