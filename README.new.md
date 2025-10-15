@@ -107,55 +107,55 @@ Here are the dependencies that the project must need:
 
 Typical Real-world Cases.
 
-### Changing the order of parameter and member variable assignments
+- 1. Changing the order of parameter and member variable assignments
 
 kitao/pyxel, 3861523a200da507f36edf478729f4ec7c269775, app.py
 
 ![](http://test.bdiff.net/public/pyxel-3861523a200da507f36edf478729f4ec7c269775-app.py.png)
 
-### Moving the try statement block
+- 2. Moving the try statement block
 
 psf/requests, cde3b88f3e93a9503810acc0ded890025fcbc119, core.py
 
 ![](http://test.bdiff.net/public/requests-cde3b88f3e93a9503810acc0ded890025fcbc119-core.py.png)
 
-### Adding conditional judgment
+- 3. Adding conditional judgment
 
 ansible/ansible, 3807824c6d0dae63b9f36dbafe8e100b0a3beaa6, \_\_init\_\_.py
 
 ![](http://test.bdiff.net/public/ansible-3807824c6d0dae63b9f36dbafe8e100b0a3beaa6-__init__.py.png)
 
-### Reusing interface elements
+- 4. Reusing interface elements
 
 topjohnwu/Magisk, fc5c9647d829cad1b73338e42164decc4ab08a54, drawer.xml
 
 ![](http://test.bdiff.net/public/magisk-fc5c9647d829cad1b73338e42164decc4ab08a54-drawer.xml.png)
 
-### Copying function implementation
+- 5. Copying function implementation
 
 keras-team/keras, aa7f9cdae951bba824883cfa392224a292b284b, core.py
 
 ![](http://test.bdiff.net/public/keras-aa7f9cdae951bba824883cfa392224a292b284bb-core.py.png)
 
-### Reuse test functions
+- 6. Reusing test functions
 
 psf/black, e911c79809c4fd9b0773dea5b6a0e710b59614cf, test_black.py
 
 ![](http://test.bdiff.net/public/black-e911c79809c4fd9b0773dea5b6a0e710b59614cf-test_black.py.png)
 
-### Line splits and block moves (Corresponds to the example at the beginning of this file)
+- 7. Line splitting and block moving (Corresponds to the example at the beginning of this file)
 
 wagtail/wagtail, a2a580f0fe7a1354a109eb062b5393fbb330f508, urls.py
 
 ![](http://test.bdiff.net/public/home-assitant-a2a580f0fe7a1354a109eb062b5393fbb330f508-urls.py.png)
 
-### Block copies and block moves
+- 8. Block copies and block moves
 
 square/okhttp, c8638813ff5f90715417e489b342aae5e410c5b2, pom.xml
 
 ![](http://test.bdiff.net/public/okhttp-c8638813ff5f90715417e489b342aae5e410c5b2-pom.xml.png)
 
-### Converting spaces to indentation
+- 9. Converting spaces to indentation
 
 scikit-learn/scikit-learn, 612312553118371289330f50b38653d1206246c0, gene.py
 

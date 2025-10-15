@@ -26,7 +26,7 @@ version = { attr = "bdiff.__version__" }
 include = ["bdiff*"]
 
 [tool.pylint]
-output-format = "github"
+output-format = "github,colorized"
 reports = "y"
 fail-on = "E,F"
 fail-under = 9
