@@ -90,7 +90,7 @@ export function formatDiffDataIntoContentLines(
       lines1EndIndex > -1
     ) {
       for (let i = lines1StartIndex; i <= lines1EndIndex; i += 1) {
-        lines1[i].ids.push(id);
+        lines1[i]!.ids.push(id);
       }
     }
     if (
@@ -100,7 +100,7 @@ export function formatDiffDataIntoContentLines(
       lines2EndIndex > -1
     ) {
       for (let i = lines2StartIndex; i <= lines2EndIndex; i += 1) {
-        lines2[i].ids.push(id);
+        lines2[i]!.ids.push(id);
       }
     }
   }
@@ -277,7 +277,7 @@ export function formatContentLinesToAlign(
     if (emptyLinesData.length === 0) break;
 
     emptyLinesData.sort(sortEmptyLinesData);
-    runEmptyLinesData(emptyLinesData[0]);
+    runEmptyLinesData(emptyLinesData[0]!);
   }
 
   /**
@@ -348,7 +348,7 @@ export function fillBlankLines(
 
     if (l1s > -1 && l1e > -1) {
       for (let i = l1s; i <= l1e; i += 1) {
-        lines1[i].block_ids.push(id);
+        lines1[i]!.block_ids.push(id);
       }
     }
 
@@ -357,7 +357,7 @@ export function fillBlankLines(
 
     if (l2s > -1 && l2e > -1) {
       for (let i = l2s; i <= l2e; i += 1) {
-        lines2[i].block_ids.push(id);
+        lines2[i]!.block_ids.push(id);
       }
     }
   }

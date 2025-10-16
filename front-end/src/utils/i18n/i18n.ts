@@ -1,6 +1,7 @@
 import { I18N_MESSAGES_README } from "@/utils/i18n/i18n-readme.ts";
 import { createI18n } from "vue-i18n";
 import { getLang } from "@/utils/storages/i18n.ts";
+import { I18N_SECURITY_POLICY } from "@/utils/i18n/i18n-security-policy.ts";
 
 export const I18N_MESSAGES = {
   en: {
@@ -35,6 +36,7 @@ export const I18N_MESSAGES = {
     mdfy_first_parameter_error: "The first parameter is invalid",
     mdfy_second_parameter_error: "The second parameter is invalid",
     readme: I18N_MESSAGES_README.en,
+    security_policy: I18N_SECURITY_POLICY.en,
 
     setting_general__git_diff_algo: "Git diff algorithm",
     setting_general__tab_size: "Tab size",
@@ -93,6 +95,7 @@ export const I18N_MESSAGES = {
     mdfy_first_parameter_error: "第一个参数格式有误",
     mdfy_second_parameter_error: "第二个参数格式有误",
     readme: I18N_MESSAGES_README.zh,
+    security_policy: I18N_SECURITY_POLICY.zh,
 
     setting_general__git_diff_algo: "Git差异算法",
     setting_general__tab_size: "制表符长度",

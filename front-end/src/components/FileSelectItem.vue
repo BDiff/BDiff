@@ -24,7 +24,7 @@ async function handleChange(e: Event) {
 
   const inputEl = e.target as HTMLInputElement;
   if (!inputEl.files || inputEl.files.length === 0) return;
-  const file = inputEl.files[0];
+  const file = inputEl.files[0]!;
   const content = await getFileContent(file);
 
   emit("onChange", { content, name: file.name });

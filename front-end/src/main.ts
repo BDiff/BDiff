@@ -7,6 +7,7 @@ import { i18n } from "@/utils/i18n/i18n.ts";
 import { setLang } from "@/utils/storages/i18n.ts";
 import { DiffModify } from "@/utils/diff/diff-modify.ts";
 import { setTheme } from "@/utils/storages/page.ts";
+import router from "@/router";
 
 const pinia = createPinia();
 const app = createApp(App);
@@ -19,6 +20,7 @@ watchEffect(() => {
 
 setTheme();
 
+app.use(router);
 app.use(pinia);
 app.use(i18n);
 app.mount("#app");

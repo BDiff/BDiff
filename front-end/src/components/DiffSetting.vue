@@ -38,7 +38,7 @@ function handleReset(options: { initial: boolean }) {
     item.value = initial ? item.defaultValue : diffSettingsStore.getStoreValue(item.key);
   });
   document
-    .getElementById(settingRefs.value[0].id)
+    .getElementById(settingRefs.value[0]!.id)
     ?.closest(".el-drawer__body")
     ?.scrollTo({ top: 0, behavior: "smooth" });
 }

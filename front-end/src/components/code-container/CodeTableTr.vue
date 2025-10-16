@@ -36,7 +36,7 @@ const currentDiff = computed<DiffDataItem | undefined>(() => {
 
   // 默认显示最后添加的脚本
   for (let i = ids.length - 1; i >= 0; i -= 1) {
-    const diff = diffStore.diffDataMap.get(ids[i]);
+    const diff = diffStore.diffDataMap.get(ids[i]!);
 
     // 默认情况下不显示 x_update，跳过
     if (diff && diff.mode.endsWith("_update")) {

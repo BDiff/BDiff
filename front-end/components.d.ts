@@ -37,6 +37,8 @@ declare module 'vue' {
     LyFileNormal: typeof import('./src/components/icons/LyFileNormal.vue')['default']
     PageMenuContainer: typeof import('./src/components/page-menu/PageMenuContainer.vue')['default']
     RootReadme: typeof import('./src/components/RootReadme.vue')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
     ThemeToggleButton: typeof import('./src/components/ThemeToggleButton.vue')['default']
     ToBottomButton: typeof import('./src/components/page-menu/ToBottomButton.vue')['default']
     ToTopButton: typeof import('./src/components/page-menu/ToTopButton.vue')['default']

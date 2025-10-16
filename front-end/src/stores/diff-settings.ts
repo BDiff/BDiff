@@ -14,12 +14,12 @@ export const useDiffSettingsStore = defineStore("diffSettings", () => {
   ) as Record<DiffSettingKey, Ref<DiffSettingValue>>;
 
   function getStoreValue(key: DiffSettingKey): DiffSettingValue {
-    return stores[key].value;
+    return stores[key]!.value;
   }
 
   function saveStores(keyValues: Array<[DiffSettingKey, DiffSettingValue]>) {
     keyValues.forEach(([key, value]) => {
-      stores[key].value = value;
+      stores[key]!.value = value;
       setDiffSetting(key, value);
     });
   }

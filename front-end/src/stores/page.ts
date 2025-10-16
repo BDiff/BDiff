@@ -74,7 +74,12 @@ export const usePageStore = defineStore("page", () => {
 
     if (!filename) {
       try {
-        githubFiles.value = await getGithubFiles({ owner, repo, installation_id, pr_number });
+        githubFiles.value = await getGithubFiles({
+          owner: owner!,
+          repo: repo!,
+          installation_id: installation_id!,
+          pr_number: pr_number!,
+        });
       } catch (_e) {
         diffStore.setLoading(false);
         return;
@@ -92,10 +97,10 @@ export const usePageStore = defineStore("page", () => {
 
     try {
       githubFilesContents = await getGithubFilesContents({
-        owner,
-        repo,
-        installation_id,
-        pr_number,
+        owner: owner!,
+        repo: repo!,
+        installation_id: installation_id!,
+        pr_number: pr_number!,
         filename,
       });
     } catch (_e) {

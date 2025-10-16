@@ -47,7 +47,7 @@ const activeLineIndexesRange = computed(() => [
         :key="`${i}_${line.toString()}`"
         :line="line"
         :active-diff="
-          i >= activeLineIndexesRange[0] && i <= activeLineIndexesRange[1] ? activeDiff : undefined
+          i >= activeLineIndexesRange[0]! && i <= activeLineIndexesRange[1]! ? activeDiff : undefined
         "
         :title="
           pageStore.isTest

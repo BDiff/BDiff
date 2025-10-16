@@ -9,7 +9,7 @@ export function formatUpdatesIntoHtmlContent(content: string, ranges: Array<Upda
   let charIndex = 0;
 
   for (let i = 0, j = 0; i < words.length && j <= ranges.length; ) {
-    const word = words[i];
+    const word = words[i] as string;
 
     // 遇到tag或ranges已处理完时直接跳过
     if (word.startsWith("<") || j === ranges.length) {
@@ -19,7 +19,7 @@ export function formatUpdatesIntoHtmlContent(content: string, ranges: Array<Upda
     }
 
     const wordLength = word.startsWith("&") ? 1 : word.length;
-    const range = ranges[j];
+    const range = ranges[j] as UpdateRange;
 
     // 只在另一边有多的内容
     if (range.length === 0) {
