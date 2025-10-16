@@ -33,6 +33,7 @@ jobs:
         pip install pytest
         pip install pytest-rerunfailures
         pip install .
+        pip install tests/requirements.txt
 
     - name: Lint with pylint
       run: pylint bdiff
