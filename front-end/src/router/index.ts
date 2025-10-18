@@ -8,8 +8,8 @@ const router = createRouter({
       component: () => import("@/views/PageHome.vue"),
     },
     {
-      path: "/security_policy",
-      component: () => import("@/views/PageSecurityPolicy.vue"),
+      path: "/privacy_policy",
+      component: () => import("@/views/PagePrivacyPolicy.vue"),
     },
   ],
 });
