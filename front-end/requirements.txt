@@ -1,5 +1,5 @@
 Flask==3.0.3
-gunicorn==22.0.0
+gunicorn==23.0.0
 argparse==1.4.0
 flask-cors==4.0.1
 PyGithub==2.5.0
