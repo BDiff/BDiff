@@ -20,37 +20,8 @@ from collections import OrderedDict
 
 import numpy as np
 from scipy import optimize
+from rapidfuzz import fuzz
 
-
-def levenshtein_ratio(s1: str, s2: str) -> float:
-    """Calculate normalized Levenshtein similarity ratio between two strings.
-    Args:
-        s1: First input string
-        s2: Second input string
-    Returns:
-        Similarity ratio in [0,1], where 1 means identical strings.
-        Computed as (total_length - edit_distance)/total_length.
-    """
-    if len(s1) == 0 and len(s2) == 0:
-        return 1.0
-
-    dp = np.zeros((len(s1) + 1, len(s2) + 1), dtype=float)
-    for i in range(len(s1) + 1):
-        dp[i, 0] = i * 1.0
-    for j in range(len(s2) + 1):
-        dp[0, j] = j * 1.0
-
-    for i in range(1, len(s1) + 1):
-        for j in range(1, len(s2) + 1):
-            cost = 0 if s1[i - 1] == s2[j - 1] else 2.0
-            dp[i, j] = min(
-                dp[i - 1, j] + 1,
-                dp[i, j - 1] + 1,
-                dp[i - 1, j - 1] + cost
-            )
-    distance = dp[len(s1), len(s2)]
-    total_length = len(s1) + len(s2)
-    return (total_length - distance) / total_length
 
 
 def w_besti_line(
@@ -84,8 +55,7 @@ def w_besti_line(
     elif not src_lines[src_line_no - 1] or not dest_lines[dest_line_no - 1]:
         return False, 0
     else:
-        line_sim = levenshtein_ratio(src_lines[src_line_no - 1].strip(), dest_lines[dest_line_no - 1].strip())
-
+        line_sim = fuzz.ratio(src_lines[src_line_no - 1].strip(), dest_lines[dest_line_no - 1].strip())/100
     if src_line_no <= ctx_length:
         src_upper_ctx = src_lines[:src_line_no - 1]
     else:
@@ -391,7 +361,7 @@ def mapping_block_move(
                    (src_lines[cur_src_line_no][0] == added_lines[cur_added_line_no][0] or
                     (src_lines[cur_src_line_no][0] != added_lines[cur_added_line_no][0] and
                      count_mv_block_update and
-                     levenshtein_ratio(src_lines[cur_src_line_no][0], added_lines[cur_added_line_no][0]) >= 0.6)) and
+                     fuzz.ratio(src_lines[cur_src_line_no][0], added_lines[cur_added_line_no][0])/100 >= 0.6)) and
                    ((added_lines[cur_added_line_no][0] != "" and
                      added_lines[cur_added_line_no][1][0] - src_lines[cur_src_line_no][1][0] == indent_diff) or
                     added_lines[cur_added_line_no][0] == "")):
@@ -522,7 +492,7 @@ def mapping_block_copy(
                    (src_lines[cur_src_line_no][0] == added_lines[cur_added_line_no][0] or
                     (src_lines[cur_src_line_no][0] != added_lines[cur_added_line_no][0] and
                      count_cp_block_update and
-                     levenshtein_ratio(src_lines[cur_src_line_no][0], added_lines[cur_added_line_no][0]) >= 0.6)) and
+                     fuzz.ratio(src_lines[cur_src_line_no][0], added_lines[cur_added_line_no][0])/100 >= 0.6)) and
                    ((added_lines[cur_added_line_no][0] != "" and
                      added_lines[cur_added_line_no][1][0] - src_lines[cur_src_line_no][1][0] == indent_diff) or
                     added_lines[cur_added_line_no][0] == "")):
@@ -632,7 +602,7 @@ def context_similarity(
     """
     src_context = construct_context(src_start, block, src_lines)
     dest_context = construct_context(dest_start, block, dest_lines)
-    return levenshtein_ratio(src_context, dest_context)
+    return fuzz.ratio(src_context, dest_context)/100
 
 
 def construct_context(start: int, block_length: int, lines: list[str]) -> str:
