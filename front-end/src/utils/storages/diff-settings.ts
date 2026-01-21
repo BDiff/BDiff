@@ -90,13 +90,13 @@ const DIFF_SETTING_MERGES__MAX_MRG_LINES: DIFF_SETTING_SELECT = {
   parent: "setting_merges__identify",
 };
 
-const DIFF_SETTING_MOVES___IDENTIFY: DIFF_SETTING_SWITCH = {
+const DIFF_SETTING_MOVES__IDENTIFY: DIFF_SETTING_SWITCH = {
   type: "switch",
   key: "setting_moves__identify",
   defaultValue: true,
 };
 
-const DIFF_SETTING_MOVES___MIN_BLOCK_LENGTH: DIFF_SETTING_SELECT = {
+const DIFF_SETTING_MOVES__MIN_BLOCK_LENGTH: DIFF_SETTING_SELECT = {
   type: "select",
   key: "setting_moves__min_block_length",
   values: initRange(2, 10, 1).map((v) => v.toString()),
@@ -104,27 +104,36 @@ const DIFF_SETTING_MOVES___MIN_BLOCK_LENGTH: DIFF_SETTING_SELECT = {
   parent: "setting_moves__identify",
 };
 
-const DIFF_SETTING_MOVES___IDENTIFY_UPDATES: DIFF_SETTING_SWITCH = {
+const DIFF_SETTING_MOVES__MAX_BLOCK_LENGTH: DIFF_SETTING_SELECT = {
+  type: "select",
+  key: "setting_moves__max_block_length",
+  // 注意 Infinity 的值在 i18n 中
+  values: ["Infinity", ...initRange(5, 50, 5).map((v) => v.toString())],
+  defaultValue: "Infinity",
+  parent: "setting_moves__identify",
+};
+
+const DIFF_SETTING_MOVES__IDENTIFY_UPDATES: DIFF_SETTING_SWITCH = {
   type: "switch",
   key: "setting_moves__identify_updates",
   defaultValue: true,
   parent: "setting_moves__identify",
 };
 
-const DIFF_SETTING_MOVES___REC_STOP_WORDS: DIFF_SETTING_SWITCH = {
+const DIFF_SETTING_MOVES__REC_STOP_WORDS: DIFF_SETTING_SWITCH = {
   type: "switch",
   key: "setting_moves__record_stop_words",
   defaultValue: false,
   parent: "setting_moves__identify",
 };
 
-const DIFF_SETTING_COPIES___IDENTIFY: DIFF_SETTING_SWITCH = {
+const DIFF_SETTING_COPIES__IDENTIFY: DIFF_SETTING_SWITCH = {
   type: "switch",
   key: "setting_copies__identify",
   defaultValue: true,
 };
 
-const DIFF_SETTING_COPIES___MIN_BLOCK_LENGTH: DIFF_SETTING_SELECT = {
+const DIFF_SETTING_COPIES__MIN_BLOCK_LENGTH: DIFF_SETTING_SELECT = {
   type: "select",
   key: "setting_copies__min_block_length",
   values: initRange(2, 10, 1).map((v) => v.toString()),
@@ -132,14 +141,23 @@ const DIFF_SETTING_COPIES___MIN_BLOCK_LENGTH: DIFF_SETTING_SELECT = {
   parent: "setting_copies__identify",
 };
 
-const DIFF_SETTING_COPIES___IDENTIFY_UPDATES: DIFF_SETTING_SWITCH = {
+const DIFF_SETTING_COPIES__MAX_BLOCK_LENGTH: DIFF_SETTING_SELECT = {
+  type: "select",
+  key: "setting_copies__max_block_length",
+  // 注意 Infinity 的值在 i18n 中
+  values: ["Infinity", ...initRange(5, 50, 5).map((v) => v.toString())],
+  defaultValue: "Infinity",
+  parent: "setting_copies__identify",
+};
+
+const DIFF_SETTING_COPIES__IDENTIFY_UPDATES: DIFF_SETTING_SWITCH = {
   type: "switch",
   key: "setting_copies__identify_updates",
   defaultValue: true,
   parent: "setting_copies__identify",
 };
 
-const DIFF_SETTING_COPIES___REC_STOP_WORDS: DIFF_SETTING_SWITCH = {
+const DIFF_SETTING_COPIES__REC_STOP_WORDS: DIFF_SETTING_SWITCH = {
   type: "switch",
   key: "setting_copies__record_stop_words",
   defaultValue: false,
@@ -157,14 +175,16 @@ export const DIFF_SETTINGS = [
   DIFF_SETTING_SPLITS__MAX_SP_LINES,
   DIFF_SETTING_MERGES__IDENTIFY,
   DIFF_SETTING_MERGES__MAX_MRG_LINES,
-  DIFF_SETTING_MOVES___IDENTIFY,
-  DIFF_SETTING_MOVES___MIN_BLOCK_LENGTH,
-  DIFF_SETTING_MOVES___IDENTIFY_UPDATES,
-  DIFF_SETTING_MOVES___REC_STOP_WORDS,
-  DIFF_SETTING_COPIES___IDENTIFY,
-  DIFF_SETTING_COPIES___MIN_BLOCK_LENGTH,
-  DIFF_SETTING_COPIES___IDENTIFY_UPDATES,
-  DIFF_SETTING_COPIES___REC_STOP_WORDS,
+  DIFF_SETTING_MOVES__IDENTIFY,
+  DIFF_SETTING_MOVES__MIN_BLOCK_LENGTH,
+  DIFF_SETTING_MOVES__MAX_BLOCK_LENGTH,
+  DIFF_SETTING_MOVES__IDENTIFY_UPDATES,
+  DIFF_SETTING_MOVES__REC_STOP_WORDS,
+  DIFF_SETTING_COPIES__IDENTIFY,
+  DIFF_SETTING_COPIES__MIN_BLOCK_LENGTH,
+  DIFF_SETTING_COPIES__MAX_BLOCK_LENGTH,
+  DIFF_SETTING_COPIES__IDENTIFY_UPDATES,
+  DIFF_SETTING_COPIES__REC_STOP_WORDS,
 ] as const;
 
 export function initRange(start: number, end: number, step: number): number[] {

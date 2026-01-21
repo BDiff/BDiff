@@ -5,6 +5,8 @@ import { I18N_PRIVACY_POLICY } from "@/utils/i18n/i18n-privacy-policy.ts";
 
 export const I18N_MESSAGES = {
   en: {
+    Infinity: "Infinity",
+
     btn_confirm: "Confirm",
     btn_edit_script: "Edit Script",
     btn_readme_directory: "Directory",
@@ -49,10 +51,12 @@ export const I18N_MESSAGES = {
     setting_merges__identify: "Identify merges",
     setting_merges__max_merge_lines: "Maximal number of merging lines",
     setting_moves__identify: "Identity block moves",
+    setting_moves__max_block_length: "Maximal moving-block length",
     setting_moves__min_block_length: "Minimal moving-block length",
     setting_moves__identify_updates: "Identity updates in block moves",
     setting_moves__record_stop_words: "Record lines only containing stop words in block moves",
     setting_copies__identify: "Identity block copies",
+    setting_copies__max_block_length: "Maximal copying-block length",
     setting_copies__min_block_length: "Minimal copying-block length",
     setting_copies__identify_updates: "Identity updates in block copies",
     setting_copies__record_stop_words: "Record lines only containing stop words in block copies",
@@ -65,6 +69,8 @@ export const I18N_MESSAGES = {
     xhr_failed_to_upload_file: "File upload failed: {msg}",
   },
   zh: {
+    Infinity: "无穷大",
+
     btn_confirm: "确定",
     btn_edit_script: "编辑脚本",
     btn_readme_directory: "目录",
@@ -108,10 +114,12 @@ export const I18N_MESSAGES = {
     setting_merges__identify: "识别块合并",
     setting_merges__max_merge_lines: "最大合并行数",
     setting_moves__identify: "识别块移动",
+    setting_moves__max_block_length: "移动块最大长度",
     setting_moves__min_block_length: "移动块最小长度",
     setting_moves__identify_updates: "识别移动块更新",
     setting_moves__record_stop_words: "纯停用词行计入移动块大小",
     setting_copies__identify: "识别块复制",
+    setting_copies__max_block_length: "复制块最大长度",
     setting_copies__min_block_length: "复制块最小长度",
     setting_copies__identify_updates: "识别复制块更新",
     setting_copies__record_stop_words: "纯停用词行计入复制块大小",

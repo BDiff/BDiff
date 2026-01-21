@@ -84,7 +84,7 @@ function handleReset(options: { initial: boolean }) {
               class="form-select"
               :style="{ '--bs-form-control-bg': 'white' }"
             >
-              <option v-for="v in item.values" :key="v" :value="v">{{ v }}</option>
+              <option v-for="v in item.values" :key="v" :value="v">{{ $te(v) ? $t(v) : v }}</option>
             </select>
           </template>
 
