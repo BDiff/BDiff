@@ -34,11 +34,13 @@ BDiff is a text-based differencing algorithm that can identify accurate line-lev
 - **Maximum Merged Lines**: The maximum number of lines allowed when detecting line merges.
 - **Maximum Split Lines**: The maximum number of lines allowed when detecting line splits.
 - **Identify Block Moves**: Enable/disable detection of block moves.
-- **Identify Block Copies**: Enable/disable detection of block copies.
 - **Include Updates in Moves**: Detect line updates within moved blocks.
-- **Include Updates in Copies**: Detect line updates within copied blocks.
 - **Include Lines with Only Stop Words in Moved Block Size Calculation**: Whether to count lines containing only stop words when calculating the size of moved blocks.
+- **Maximal move-block distance**: The maximum relative distance between the two blocks in a block-move edit action.
+- **Identify Block Copies**: Enable/disable detection of block copies.
+- **Include Updates in Copies**: Detect line updates within copied blocks.
 - **Include Lines with Only Stop Words in Copied Block Size Calculation**: Whether to count lines containing only stop words when calculating the size of copied blocks.
+- **Maximal copying-block distance**: The maximum relative distance between the two blocks in a block-copy edit action.
 ## 3. 🚩 Typical Real-world Cases
 ### 3.1 Changing the order of parameter and member variable assignments
 kitao/pyxel, 3861523a200da507f36edf478729f4ec7c269775, app.py
