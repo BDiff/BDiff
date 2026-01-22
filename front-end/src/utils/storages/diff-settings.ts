@@ -104,9 +104,9 @@ const DIFF_SETTING_MOVES__MIN_BLOCK_LENGTH: DIFF_SETTING_SELECT = {
   parent: "setting_moves__identify",
 };
 
-const DIFF_SETTING_MOVES__MAX_BLOCK_LENGTH: DIFF_SETTING_SELECT = {
+const DIFF_SETTING_MOVES__MAX_BLOCK_DISTANCE: DIFF_SETTING_SELECT = {
   type: "select",
-  key: "setting_moves__max_block_length",
+  key: "setting_moves__max_block_distance",
   // 注意 Infinity 的值在 i18n 中
   values: ["Infinity", ...initRange(5, 50, 5).map((v) => v.toString())],
   defaultValue: "Infinity",
@@ -141,9 +141,9 @@ const DIFF_SETTING_COPIES__MIN_BLOCK_LENGTH: DIFF_SETTING_SELECT = {
   parent: "setting_copies__identify",
 };
 
-const DIFF_SETTING_COPIES__MAX_BLOCK_LENGTH: DIFF_SETTING_SELECT = {
+const DIFF_SETTING_COPIES__MAX_BLOCK_DISTANCE: DIFF_SETTING_SELECT = {
   type: "select",
-  key: "setting_copies__max_block_length",
+  key: "setting_copies__max_block_distance",
   // 注意 Infinity 的值在 i18n 中
   values: ["Infinity", ...initRange(5, 50, 5).map((v) => v.toString())],
   defaultValue: "Infinity",
@@ -177,12 +177,12 @@ export const DIFF_SETTINGS = [
   DIFF_SETTING_MERGES__MAX_MRG_LINES,
   DIFF_SETTING_MOVES__IDENTIFY,
   DIFF_SETTING_MOVES__MIN_BLOCK_LENGTH,
-  DIFF_SETTING_MOVES__MAX_BLOCK_LENGTH,
+  DIFF_SETTING_MOVES__MAX_BLOCK_DISTANCE,
   DIFF_SETTING_MOVES__IDENTIFY_UPDATES,
   DIFF_SETTING_MOVES__REC_STOP_WORDS,
   DIFF_SETTING_COPIES__IDENTIFY,
   DIFF_SETTING_COPIES__MIN_BLOCK_LENGTH,
-  DIFF_SETTING_COPIES__MAX_BLOCK_LENGTH,
+  DIFF_SETTING_COPIES__MAX_BLOCK_DISTANCE,
   DIFF_SETTING_COPIES__IDENTIFY_UPDATES,
   DIFF_SETTING_COPIES__REC_STOP_WORDS,
 ] as const;
