@@ -83,11 +83,11 @@ MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
 See the Mulan PubL v2 for more details.
 ```
 ## 5. 🎅 Contributors
-- Lu Yao (卢遥)
-- Liu Wanwei (刘万伟)
-- Song Wansheng (宋万盛)
-- Chen Jing (陈璟)
-- Yan Zhikang (颜智康)
+- Lu Yao
+- Liu Wanwei
+- Song Wansheng
+- Chen Jing
+- Yan Zhikang
 ## 6. 📎 Citing BDiff
 We have conducted a comprehensive evaluation experiment on BDiff, with detailed results available in our paper: [https://arxiv.org/abs/2510.21094](https://arxiv.org/abs/2510.21094). We are glad if you cite the relevant article in the following bibtex:
 ```bibtex
