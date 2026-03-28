@@ -74,7 +74,7 @@ export const I18N_MESSAGES_README = {
         `<p>This software is licensed under <a href="http://openworks.org.cn/#/licenses/MulanPubL-v2">Mulan Public License，Version 2</a> (Mulan PubL v2).</p>` +
         `<div class="bg-light">` +
         `<pre class="p-3">` +
-        `<code>Copyright (c) [2025] [Lu YAO]
+        `<code>Copyright (c) [2025] [**]
 BDiff is licensed under Mulan PubL v2.
 You can use this software according to the terms and conditions of the Mulan PubL v2.
 You may obtain a copy of Mulan PubL v2 at:
@@ -216,7 +216,7 @@ See the Mulan PubL v2 for more details.</code>` +
         `<p>BDiff使用<a href="http://openworks.mulanos.cn/#/licenses/MulanPubL-v2" target="_blank">木兰公共许可证 v2</a>开源：</p>` +
         `<div class="bg-light">` +
         `<pre class="p-3">` +
-        `<code>Copyright (c) [2025] [Lu YAO]
+        `<code>Copyright (c) [2025] [**]
 BDiff is licensed under Mulan PubL v2.
 You can use this software according to the terms and conditions of the Mulan PubL v2.
 You may obtain a copy of Mulan PubL v2 at:
