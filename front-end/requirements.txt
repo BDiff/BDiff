@@ -2,7 +2,7 @@ Flask==3.0.3
 gunicorn==22.0.0
 argparse==1.4.0
 flask-cors==4.0.1
-PyGithub==2.5.0
+PyGithub==2.8.1
 PyJWT~=2.10.1
 cryptography
 requests~=2.32.3
