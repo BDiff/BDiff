@@ -1,34 +1,52 @@
 cff-version: 1.2.0
-message: "If you use this software or cite this paper, please cite the following reference."
+message: "If you use this software, please cite it as below."
 authors:
-  - family-names: Lu
-    given-names: Yao
-  - family-names: Liu
-    given-names: Wanwei
-  - family-names: Zhang
-    given-names: Tanghaoran
-  - family-names: Yang
-    given-names: Kang
-  - family-names: Zhang
-    given-names: Yang
-  - family-names: Xu
-    given-names: Wenyu
-  - family-names: Sun
-    given-names: Longfei
-  - family-names: Mao
-    given-names: Xinjun
-  - family-names: Gao
-    given-names: Shuzheng
-  - family-names: Lyu
-    given-names: Michael R.
+- family-names: "Lu"
+  given-names: "Yao"
+  orcid: ""
+- family-names: "Liu"
+  given-names: "Wanwei"
+  orcid: ""
+- family-names: "Zhang"
+  given-names: "Tanghaoran"
+  orcid: ""
+- family-names: "Yang"
+  given-names: "Kang"
+  orcid: ""
+- family-names: "Zhang"
+  given-names: "Yang"
+  orcid: ""
+- family-names: "Xu"
+  given-names: "Wenyu"
+  orcid: ""
+- family-names: "Sun"
+  given-names: "Longfei"
+  orcid: ""
+- family-names: "Mao"
+  given-names: "Xinjun"
+  orcid: ""
+- family-names: "Gao"
+  given-names: "Shuzheng"
+  orcid: ""
+- family-names: "Lyu"
+  given-names: "Michael R."
+  orcid: ""
 title: "BDiff: Block-Aware and Accurate Text-Based Code Differencing"
 version: 1.0.0
-date-released: 2026-10
 doi: 10.1145/3832783.3837431
+date-released: 2026-10
 url: "https://doi.org/10.1145/3832783.3837431"
 type: conference-paper
-conference: "Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering (ASE 2026)"
-month: 10
-start: 1702
-end: 1714
-year: 2026
+conference:
+  name: "Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering"
+  series: "ASE '26"
+  location: "Munich, Germany"
+publisher: "Association for Computing Machinery"
+publisher-place: "New York, NY, USA"
+isbn: "9798400728822"
+pages: "1702–1714"
+keywords:
+  - "Block-level edit action"
+  - "Code differencing"
+  - "Code review"
+  - "Edit script"
