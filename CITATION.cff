@@ -35,10 +35,3 @@ publisher: Association for Computing Machinery
 publisher-place: New York, NY, USA
 isbn: 9798400728822
 pages: 1702–1714
-keywords:
-  - Block-level edit action
-  - Code differencing
-  - Code review
-  - Edit script
-abstract: >
-  Code differencing is a fundamental technique in software engineering. Traditional line-level differencing tools (e.g., Git Myers algorithm) cannot accurately identify block-level edit actions (EAs) such as block move and copy, which are common in real development. They split multi-line block edits into fragmented line-wise changes, raising developers’ cognitive overhead during code review. This paper presents BDiff, a text-based differencing algorithm capable of identifying two types of block-level EAs and five types of line-level EAs. Building on traditional differencing algorithms, we first construct a candidate set containing all possible line and block mappings. Leveraging the Kuhn-Munkres algorithm, we then compute the optimal mapping set and derive a minimal edit script (ES) that closely aligns with the original developer intent. To evaluate BDiff, we selected five state-of-the-art tools, including large language models (LLMs), as baselines, and adopted a combined qualitative and quantitative approach to assess their performance in terms of ES size, result quality, and running time. Experimental results show that BDiff produces higher-quality differencing results than baseline tools while maintaining competitive runtime performance. Our experiments also show the unreliability of LLMs in code differencing tasks and their infeasibility in terms of runtime efficiency. Based on the proposed algorithm, we have implemented an open-sourced visual differencing tool.
