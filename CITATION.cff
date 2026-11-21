@@ -36,3 +36,34 @@ version: 1.0.0
 doi: 10.1145/3832783.3837431
 date-released: 2026-10
 url: "https://doi.org/10.1145/3832783.3837431"
+preferred-citation:
+  type: conference-paper
+  authors:
+  - family-names: "Lu"
+    given-names: "Yao"
+  - family-names: "Liu"
+    given-names: "Wanwei"
+  - family-names: "Zhang"
+    given-names: "Tanghaoran"
+  - family-names: "Yang"
+    given-names: "Kang"
+  - family-names: "Zhang"
+    given-names: "Yang"
+  - family-names: "Xu"
+    given-names: "Wenyu"
+  - family-names: "Sun"
+    given-names: "Longfei"
+  - family-names: "Mao"
+    given-names: "Xinjun"
+  - family-names: "Gao"
+    given-names: "Shuzheng"
+  - family-names: "Lyu"
+    given-names: "Michael R."
+  doi: "10.1145/3832783.3837431"
+  conference: "Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering"
+  month: 10
+  start: 1702
+  end: 1714
+  title: "BDiff: Block-Aware and Accurate Text-Based Code Differencing"
+  year: 2026
+
