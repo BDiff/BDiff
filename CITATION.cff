@@ -23,6 +23,14 @@ authors:
     given-names: "Michael R."
 title: "BDiff: Block-aware and Accurate Text-based Code Differencing"
 version: 1.0
-doi: https://arxiv.org/abs/2510.21094
-date-released: 2025-10
-url: "https://github.com/BDiff/BDiff"
+doi: 10.1145/3832783.3837431
+date-released: 2026-10
+url: "https://doi.org/10.1145/3832783.3837431"
+isbn: 9798400728822
+publisher: Association for Computing Machinery (ACM)
+booktitle: Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering
+pages: 1702–1714,
+numpages: 13,
+keywords: Block-level edit action, Code differencing, Code review, Edit script
+location = Munich, Germany
+series = ASE '26
