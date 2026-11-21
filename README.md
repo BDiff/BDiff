@@ -44,31 +44,31 @@ BDiff is a text-based differencing algorithm that can identify accurate line-lev
 ## 3. 🚩 Typical Real-world Cases
 ### 3.1 Changing the order of parameter and member variable assignments
 kitao/pyxel, 3861523a200da507f36edf478729f4ec7c269775, app.py
-![](https://camo.githubusercontent.com/229a726f52dddcfc628ffda45aeb1864263540e49424568649269b8f138a3241/687474703a2f2f746573742e62646966662e6e65742f7075626c69632f707978656c2d333836313532336132303064613530376633366564663437383732396634656337633236393737352d6170702e70792e706e67)
+![](https://github.com/user-attachments/assets/bcc940b9-49ca-43d0-9953-0d1e9805e495)
 ### 3.2 Moving the try statement block
 psf/requests, cde3b88f3e93a9503810acc0ded890025fcbc119, core.py
-![](https://camo.githubusercontent.com/38a36089719b9a70ec402b07ec23267377b8a42ffb2183b89ecb4495f7ee089d/687474703a2f2f746573742e62646966662e6e65742f7075626c69632f72657175657374732d636465336238386633653933613935303338313061636330646564383930303235666362633131392d636f72652e70792e706e67)
+![](https://github.com/user-attachments/assets/da22a8df-9a07-47c2-a4fa-d69e366897bd)
 ### 3.3 Adding conditional judgment
 ansible/ansible, 3807824c6d0dae63b9f36dbafe8e100b0a3beaa6, __init__.py
-![](https://camo.githubusercontent.com/a31e6fa80ce0f0de3d8aefaebeec27fedeccd007d33abe6a6a47c0fa47ef2355/687474703a2f2f746573742e62646966662e6e65742f7075626c69632f616e7369626c652d333830373832346336643064616536336239663336646261666538653130306230613362656161362d5f5f696e69745f5f2e70792e706e67)
+![](https://github.com/user-attachments/assets/7b3d660d-48a9-4d9c-b43c-f95c5dec7b03)
 ### 3.4 Reusing interface elements
 topjohnwu/Magisk, fc5c9647d829cad1b73338e42164decc4ab08a54, drawer.xml
-![](https://camo.githubusercontent.com/d03dbe441dcbdb3afc0958cde389ac21fa274f0e0cc42d87d31e5a1421eaf0fd/687474703a2f2f746573742e62646966662e6e65742f7075626c69632f6d616769736b2d666335633936343764383239636164316237333333386534323136346465636334616230386135342d6472617765722e786d6c2e706e67)
+![](https://github.com/user-attachments/assets/41f7125c-760a-492c-9bcb-1324b345c636)
 ### 3.5 Copying function implementation
 keras-team/keras, aa7f9cdae951bba824883cfa392224a292b284b, core.py
-![](https://camo.githubusercontent.com/ff6a32f4c12aeef23c19b7ac96a15d1d7d6fb6f62836b93f29d3c797465840c4/687474703a2f2f746573742e62646966662e6e65742f7075626c69632f6b657261732d616137663963646165393531626261383234383833636661333932323234613239326232383462622d636f72652e70792e706e67)
+![](https://github.com/user-attachments/assets/235c37d3-e1f5-4615-b51e-10f75aaebb47)
 ### 3.6 Reusing test functions
 psf/black, e911c79809c4fd9b0773dea5b6a0e710b59614cf, test_black.py
-![](https://camo.githubusercontent.com/0ed1ae9ebc052559ede6a9affd65fa62988bc3d77ce5c52a19d12dfcdb97ef53/687474703a2f2f746573742e62646966662e6e65742f7075626c69632f626c61636b2d653931316337393830396334666439623037373364656135623661306537313062353936313463662d746573745f626c61636b2e70792e706e67)
+![](https://github.com/user-attachments/assets/33004e2f-16bd-4b2e-b0a9-2dfb12589bf0)
 ### 3.7 Line splitting and block moving (Corresponds to the example at the beginning of this file)
 wagtail/wagtail, a2a580f0fe7a1354a109eb062b5393fbb330f508, urls.py
-![](https://private-user-images.githubusercontent.com/11403509/496940973-d91a5adc-93e0-490b-a8c1-9d3c63824e82.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjY4OTAwOTcsIm5iZiI6MTc2Njg4OTc5NywicGF0aCI6Ii8xMTQwMzUwOS80OTY5NDA5NzMtZDkxYTVhZGMtOTNlMC00OTBiLWE4YzEtOWQzYzYzODI0ZTgyLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjI4VDAyNDMxN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTRkNmY1MWVmYzQxMWNkYTg4YjkzMzJmNGM0ZWY4ZTU1YWJkMDMwZWZkNTRiZmM1M2IxNTNkODdlOTVhZWI5ZGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.2p6WbJcHfYZ6vZHtDvGTDs7mGs61gtl6W8y3MitM2dQ)
+![](https://github.com/user-attachments/assets/04398ac4-2607-4ee6-8e4a-86d84cbf7506)
 ### 3.8 Block copies and block moves
 square/okhttp, c8638813ff5f90715417e489b342aae5e410c5b2, pom.xml
-![](https://camo.githubusercontent.com/cb827965b733f8ad90fa6688288094ce2a3704fa9e692252bcd0937e57a2e81f/687474703a2f2f746573742e62646966662e6e65742f7075626c69632f6f6b687474702d633836333838313366663566393037313534313765343839623334326161653565343130633562322d706f6d2e786d6c2e706e67)
+![](https://github.com/user-attachments/assets/7e4df8fc-004d-4809-ab3e-3501f23bbb03)
 ### 3.9 Converting spaces to indentation
 scikit-learn/scikit-learn, 612312553118371289330f50b38653d1206246c0, gene.py
-![](https://camo.githubusercontent.com/709ab2f039dc07ddaa56c962943272ac5ceb1c5415414d25e86db34be05d870e/687474703a2f2f746573742e62646966662e6e65742f7075626c69632f7363696b69742d6c6561726e2d363132333132353533313138333731323839333330663530623338363533643132303632343663302d67656e652e70792e706e67)
+![](https://github.com/user-attachments/assets/924bb6fc-8145-41e1-94c4-c1af4f147571)
 ## 4. 📃 License
 This software is licensed under [Mulan Public License，Version 2](http://openworks.mulanos.cn/#/licenses/MulanPubL-v2) (Mulan PubL v2).
 ```
