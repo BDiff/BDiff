@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: If you use this software or cite this paper, please cite the following reference.
+message: "If you use this software or cite this paper, please cite the following reference."
 authors:
   - family-names: Lu
     given-names: Yao
@@ -21,17 +21,14 @@ authors:
     given-names: Shuzheng
   - family-names: Lyu
     given-names: Michael R.
-title: 'BDiff: Block-Aware and Accurate Text-Based Code Differencing'
+title: "BDiff: Block-Aware and Accurate Text-Based Code Differencing"
 version: 1.0.0
-date-released: '2026'
+date-released: 2026-10
 doi: 10.1145/3832783.3837431
-url: https://doi.org/10.1145/3832783.3837431
+url: "https://doi.org/10.1145/3832783.3837431"
 type: conference-paper
-conference:
-  name: Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering
-  series: ASE '26
-  location: Munich, Germany
-publisher: Association for Computing Machinery
-publisher-place: New York, NY, USA
-isbn: 9798400728822
-pages: 1702–1714
+conference: "Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering (ASE 2026)"
+month: 10
+start: 1702
+end: 1714
+year: 2026
