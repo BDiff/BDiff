@@ -89,15 +89,22 @@ See the Mulan PubL v2 for more details.
 - Chen Jing
 - Yan Zhikang
 ## 6. 📎 Citing BDiff
-We have conducted a comprehensive evaluation experiment on BDiff, with detailed results available in our paper: [https://arxiv.org/abs/2510.21094](https://arxiv.org/abs/2510.21094). We are glad if you cite the relevant article in the following bibtex:
+We have conducted a comprehensive evaluation experiment on BDiff, with detailed results available in our paper: [https://doi.org/10.1145/3832783.3837431](https://doi.org/10.1145/3832783.3837431). We are glad if you cite the relevant article in the following bibtex:
 ```bibtex
-@misc{lu2025bdiffblockawareaccuratetextbased,
-      title={BDiff: Block-aware and Accurate Text-based Code Differencing}, 
-      author={Yao Lu and Wanwei Liu and Tanghaoran Zhang and Kang Yang and Yang Zhang and Wenyu Xu and Longfei Sun and Xinjun Mao and Shuzheng Gao and Michael R. Lyu},
-      year={2025},
-      eprint={2510.21094},
-      archivePrefix={arXiv},
-      primaryClass={cs.SE},
-      url={https://arxiv.org/abs/2510.21094}, 
+@inproceedings{10.1145/3832783.3837431,
+author = {Lu, Yao and Liu, Wanwei and Zhang, Tanghaoran and Yang, Kang and Zhang, Yang and Xu, Wenyu and Sun, Longfei and Mao, Xinjun and Gao, Shuzheng and Lyu, Michael R.},
+title = {BDiff: Block-Aware and Accurate Text-Based Code Differencing},
+year = {2026},
+isbn = {9798400728822},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3832783.3837431},
+doi = {10.1145/3832783.3837431},
+booktitle = {Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering},
+pages = {1702–1714},
+numpages = {13},
+keywords = {Block-level edit action, Code differencing, Code review, Edit script},
+location = {Munich, Germany},
+series = {ASE '26}
 }
 ```
